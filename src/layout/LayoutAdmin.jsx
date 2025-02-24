@@ -1,7 +1,7 @@
 import React from 'react'
-import Sidebar from '../component.jsx/SideBar'
 import { Outlet } from 'react-router-dom'
-import Footer from '../component.jsx/Footer'
+import Footer from './../component/Footer';
+import Sidebar from './../component/SideBar';
 
 const LayoutAdmin = () => {
   return (
