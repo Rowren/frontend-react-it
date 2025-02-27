@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import ManageCategorypage from '../../component/admin/ManageCategorypage';
 
 const ManageCategory = () => {
-  return (
-    <div>ManageCategory</div>
-  )
-}
+    return (
+        <div>
+            <ManageCategorypage />
+        </div>
+    );
+};
 
-export default ManageCategory
+export default ManageCategory;

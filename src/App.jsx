@@ -1,9 +1,13 @@
-import React from 'react'
-import AppRoute from './route/AppRoute'
+import React from 'react';
+import AppRoute from './route/AppRoute';
+import { CartProvider } from './component/user/CartContext';
+
 const App = () => {
   return (
-    <AppRoute />
-  )
-}
+    <CartProvider>
+      <AppRoute />
+    </CartProvider>
+  );
+};
 
-export default App
+export default App;

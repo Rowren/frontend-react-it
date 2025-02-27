@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Navbar from '../component/Navbar'
-import Footer from '../component/Footer' // แก้ชื่อให้ถูกต้อง
+import Footer from '../component/Footer'
 
 const Layout = () => {
     return (
@@ -14,9 +14,7 @@ const Layout = () => {
                 <Outlet />
             </main>
 
-            <footer>
-                <Footer />
-            </footer>
+            <Footer />
         </div>
     )
 }

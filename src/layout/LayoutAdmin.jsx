@@ -1,20 +1,23 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Footer from './../component/Footer';
-import Sidebar from './../component/SideBar';
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Footer from "./../component/Footer";
+import Sidebar from "./../component/SideBar";
 
 const LayoutAdmin = () => {
-  return (
-    <div className="flex flex-col min-h-screen">
-      <div className="flex flex-1">
-        <Sidebar />
-        <main className="flex-grow p-4">
-          <Outlet />
-        </main>
-      </div>
-      <Footer />
-    </div>
-  )
-}
+    return (
+        <div className="flex min-h-screen">
+            {/* Sidebar ติดด้านซ้าย */}
+            <Sidebar />
+            
+            {/* Main Content + Footer */}
+            <div className="flex-1 flex flex-col ml-64">
+                <main className="flex-grow p-4 overflow-auto">
+                    <Outlet />
+                </main>
+                <Footer />
+            </div>
+        </div>
+    );
+};
 
-export default LayoutAdmin
+export default LayoutAdmin;

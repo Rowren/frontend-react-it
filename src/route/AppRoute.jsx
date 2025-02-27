@@ -4,7 +4,7 @@ import Product from '../pages/user/Product';
 import Home from '../pages/user/Home';
 import Order from '../pages/user/Order';
 import Layout from '../layout/Layout';
-import DashBoard from '../pages/admin/DashBoard';
+import DashBoard from '../pages/admin/ManageUsers';
 import ManageProduct from '../pages/admin/ManageProduct';
 import ManageOrder from '../pages/admin/ManageOrder';
 import ManageCategory from '../pages/admin/ManageCategory';

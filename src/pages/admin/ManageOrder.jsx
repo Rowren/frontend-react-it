@@ -1,8 +1,9 @@
 import React from 'react'
+import ManageOrderpage from '../../component/admin/ManageOrderpage'
 
 const ManageOrder = () => {
   return (
-    <div>ManageOrder</div>
+    <div><ManageOrderpage/></div>
   )
 }
 

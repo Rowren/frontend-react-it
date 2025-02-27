@@ -1,8 +1,9 @@
 import React from 'react'
-
+import Homepage from '../../component/admin/ManageProductpage'
+import ManageProductpage from '../../component/admin/ManageProductpage'
 const ManageProduct = () => {
   return (
-    <div>ManageProduct</div>
+    <div><ManageProductpage/></div>
   )
 }
 
