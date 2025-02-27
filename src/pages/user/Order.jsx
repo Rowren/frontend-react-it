@@ -1,8 +1,9 @@
 import React from 'react'
+import Orderpage from '../../component/user/Orderpage'
 
 const Order = () => {
   return (
-    <div>Order</div>
+    <div><Orderpage/></div>
   )
 }
 

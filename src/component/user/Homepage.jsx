@@ -10,10 +10,10 @@ import promo2 from '../../assets/promo2.jpg';
 import promo3 from '../../assets/promo3.jpg';
 
 // นำเข้ารูปสินค้าจาก assets
-import product1 from '../../assets/product1.jpg';
-import product2 from '../../assets/product2.jpg';
-import product3 from '../../assets/product1.jpg';
-import product4 from '../../assets/product2.jpg';
+import product1 from '../../assets/mo1.jpg';
+import product2 from '../../assets/m1.jpg';
+import product3 from '../../assets/cpu1.jpg';
+import product4 from '../../assets/p1.jpg';
 
 const promotions = [
     { id: 1, image: promo1, title: 'Discount 50% on Gaming Laptops' },
