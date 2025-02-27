@@ -20,7 +20,7 @@ const Orderpage = () => {
                       {cart.map((item) => (
                           <div key={item.id} className="flex items-center justify-between bg-white p-4 shadow-md rounded-lg">
                               <div className="flex items-center space-x-4">
-                                  <img src={item.image} alt={item.name} className="w-16 h-16 object-contain" />
+                                  <img src={item.image} alt={item.name} className="w-16 h-16 object-contain hover:scale-150" />
                                   <div>
                                       <h3 className="font-semibold">{item.name}</h3>
                                       <p className="text-gray-600">฿{item.price}</p>

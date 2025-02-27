@@ -11,6 +11,8 @@ import k3 from '../../assets/k3.jpg';
 import m1 from '../../assets/m1.jpg';
 
 const ManageProductpage = () => {
+    const categories = ['เมาส์', 'คีย์บอร์ด', 'เคส', 'หน้าจอ', 'CPU', 'Power Supply'];
+
     const [products, setProducts] = useState([
         { id: 1, name: 'เคส 1', price: 50, image: c1 },
         { id: 2, name: 'เคส 2', price: 55, image: c2 },
@@ -77,12 +79,23 @@ const ManageProductpage = () => {
                     value={newProduct.image}
                     onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value })}
                 />
+                <select
+                    className="p-2 border border-gray-300 rounded-md m-2 "
+                    value={newProduct.category}
+                    onChange={(e) => setNewProduct({ ...newProduct, category: e.target.value })}
+                >
+                    <option value="">เลือกประเภทสินค้า</option>
+                    {categories.map((cat, index) => (
+                        <option key={index} value={cat}>{cat}</option>
+                    ))}
+                </select>
                 <button
                     onClick={editingProduct ? saveEditedProduct : addProduct}
                     className="ml-2 bg-blue-500 text-white px-4 py-2 rounded-md"
                 >
                     {editingProduct ? 'บันทึกการแก้ไข' : 'เพิ่มสินค้า'}
                 </button>
+
             </div>
 
             {/* รายการสินค้าที่สามารถจัดการได้ */}

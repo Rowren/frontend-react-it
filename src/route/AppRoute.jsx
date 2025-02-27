@@ -9,6 +9,8 @@ import ManageProduct from '../pages/admin/ManageProduct';
 import ManageOrder from '../pages/admin/ManageOrder';
 import ManageCategory from '../pages/admin/ManageCategory';
 import LayoutAdmin from '../layout/LayoutAdmin';
+import Register from '../pages/auth/Register'; 
+import Login from '../pages/auth/Login'; 
 
 const router = createBrowserRouter([
     
@@ -19,6 +21,8 @@ const router = createBrowserRouter([
             { index: true, element: <Home /> },
             { path: 'product', element: <Product /> },
             { path: 'order', element: <Order /> },
+            { path: 'register', element: <Register /> },
+            { path: 'login', element: <Login /> },
         ]
     },
     {

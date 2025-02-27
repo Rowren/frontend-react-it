@@ -53,7 +53,7 @@ const Homepage = () => {
                     <div key={product.id} className="bg-white p-4 shadow-md rounded-lg text-center">
                         {/* ปรับขนาดรูปสินค้าให้เท่ากัน */}
                         <div className="w-full h-40 flex justify-center items-center">
-                            <img src={product.image} alt={product.name} className="w-32 h-32 object-contain" />
+                            <img src={product.image} alt={product.name} className="w-32 h-32 object-contain hover:scale-150" />
                         </div>
                         <h3 className="font-semibold mt-2">{product.name}</h3>
                         <p className="text-gray-600">{product.price}</p>
